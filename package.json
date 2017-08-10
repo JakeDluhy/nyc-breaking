@@ -9,6 +9,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "6.25.0",
     "nyc": "11.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "require": [
+      "babel-core/register"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }
